@@ -9,6 +9,7 @@ from wagtail.documents import urls as wagtaildocs_urls
 from search import views as search_views
 
 urlpatterns = [
+    path('polls/', include('polls.urls')),
     path('django-admin/', admin.site.urls),
 
     path('admin/', include(wagtailadmin_urls)),
